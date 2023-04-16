@@ -1,0 +1,159 @@
+:root{
+    --primary-color: #fe6500;
+    --white-color: #fff;
+    --text-color: #333;
+    --text-color: #fff;
+    --green-color: #008000;
+}
+
+*{
+    box-sizing: initial;
+    user-select: none;
+}
+
+
+body{
+    font-family: 'Arimo', sans-serif;
+    font-size: 62%;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1770px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+#all, #food, #drink, #vegetarian-food, #cream-cake, #dessert{
+    display: none;
+}
+
+#today, #all, #food, #drink, #vegetarian-food, #cream-cake, #dessert{
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+    -webkit-animation: slide-down .3s ease-in;
+    -moz-animation: slide-down .3s ease-in;
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+}
+
+.btn--primary {
+    min-width: 100px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size:  14px;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+}
+
+.back-top{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 38px;
+    background: #ccc;
+    font-size: 12px;
+    opacity: .9;
+    z-index: 5000;
+}
+
+.back-top ul{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+.btn-back-top{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 32px;
+    white-space: nowrap;
+    border-bottom: 1px solid #c2c2c2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.back-top ul li a{
+    display: block;
+    padding: 5px 0;
+}
+
+.back-top-icon{
+    font-size: 22px;
+    color: #fff;
+}
+
+.fa-angle-up{
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.back-top ul li label{
+    position: absolute;
+    background: #ebebeb;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+
+.back-top ul li:hover {
+    background: #d7d7d7;
+}
+
+.back-top ul li:hover label {
+    left: inherit;
+    right: 42px;
+    display: block;
+}
+
+.btn-down-app{
+    display: block;
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    border-bottom: 1px solid #c2c2c2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* responsive */
+
+
+
+@media screen and (min-width: 420px){
+    *{
+        display: none;
+    }
+}
+
